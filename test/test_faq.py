@@ -46,8 +46,8 @@ faq = {
 class TestFaqSection:
 
     @pytest.mark.parametrize('question', [key for key in faq.keys()])
-    @allure.title('Проверка наличия ответа на вопрос 1 в FAQ')
-    def test_faq_item_1(self, home_page, question):
+    @allure.title('Проверка наличия ответа на вопрос в FAQ')
+    def test_faq(self, home_page, question):
         section_header = faq[question]["question"]
         section_content = faq[question]["answer"]
         home_page.open_page(home_page.url)
