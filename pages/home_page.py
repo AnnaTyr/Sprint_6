@@ -1,8 +1,6 @@
 import allure
 from pages.base_page import BasePage
 from pages.order_page import OrderPage
-from time import sleep
-
 
 class HomePage(BasePage):
     
